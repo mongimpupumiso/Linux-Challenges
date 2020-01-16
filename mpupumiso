@@ -1,0 +1,155 @@
+TASK 1 : BASIC TASK
+
+QUESTION 1
+
+recruit@admin1-ThinkCentre-M72e:~$ ls
+Desktop    Downloads     Music     Public     Videos
+Documents  IdeaProjects  Pictures  Templates
+
+a)I see directories on the current file. 
+b)It list the files in the current dirrectory.
+
+QUESTION 2
+
+a)I see /home/recruit, which means my working dirrectory.
+b)It tells me which current dirrectory I'm currently located at.
+
+QUESTION 3
+
+a)My answers on the terminal above.
+
+QUESTION 4
+
+a)I see that there is nothing on the current file. 
+b)Since the workspace file has just been created there is nothing inside it, thus it is empty and nothing is showing under it.  
+
+QUESTION 5
+
+recruit@admin1-ThinkCentre-M72e:~/workspace$ touch README.md
+
+QUESTION 6
+
+recruit@admin1-ThinkCentre-M72e:~/workspace$ cp README.md CHANGELOG.md
+
+
+
+TASK 2 : ABSOLUE AND RELATIVE PATHS
+
+recruit@admin1-ThinkCentre-M72e:~$ touch exersise.md
+recruit@admin1-ThinkCentre-M72e:~$ mv exersise.md /tmp
+
+
+
+TASK 3 : CAT COMMANDS
+
+QUESTION 1
+
+recruit@admin1-ThinkCentre-M72e:~$ touch umuzi.md recruits.md cohort.md
+
+QUESTION 2
+
+recruit@admin1-ThinkCentre-M72e:~$ echo "I not know what to expect on that week of MUB." >> umuzi.md
+recruit@admin1-ThinkCentre-M72e:~$ echo "As soon as we were setled in our groupsit was a nice vibe, getting to know new recruits from other departments." >> recruits.md
+recruit@admin1-ThinkCentre-M72e:~$ echo "Also I want to send a sout-out to our facilitators, they were with us all the way. We couldn't even see that we were changing them, thats how cool they are" >> cohort.md
+
+QUSTION 3
+
+recruit@admin1-ThinkCentre-M72e:~$ cat umuzi.md recruits.md cohort.md
+I not know what to expect on that week of MUB.
+As soon as we were setled in our groupsit was a nice vibe, getting to know new recruits from other departments.
+Also I want to send a sout-out to our facilitators, they were with us all the way. We couldn't even see that we were changing them, thats how cool they are
+
+
+QUESTION 4
+
+recruit@admin1-ThinkCentre-M72e:~$ cat umuzi.md cohort.md recruits.md >> summary.md
+
+QUESTION 5
+
+recruit@admin1-ThinkCentre-M72e:~$ echo 'The End' >> summary.md
+
+
+
+TASK 4 : THE LOCATE COMMAND
+
+QUESTION 1
+
+recruit@admin1-ThinkCentre-M72e:~$ locate umuzi.md
+/home/recruit/umuzi.md
+
+QUESTION 2
+
+recruit@admin1-ThinkCentre-M72e:~$ locate umuzi.md >> search_result.md
+
+
+
+TASK 5 : THE LOCATE COMMAND CONT..
+
+QUESTION 1
+
+recruit@admin1-ThinkCentre-M72e:~$ cd Documents
+recruit@admin1-ThinkCentre-M72e:~/Documents$ touch pad.md
+
+QUESTION 2
+
+recruit@admin1-ThinkCentre-M72e:~/Documents$ cd ..
+recruit@admin1-ThinkCentre-M72e:~$ cd Desktop
+recruit@admin1-ThinkCentre-M72e:~/Desktop$ mkdir work
+
+
+QUESTION 3
+
+recruit@admin1-ThinkCentre-M72e:~/Desktop$ cp ~/Documents/pad.md pad_copy.md
+
+QUESTION 4
+
+recruit@admin1-ThinkCentre-M72e:~/Desktop$ locate updatedb
+/etc/updatedb.conf
+/etc/alternatives/updatedb
+/etc/alternatives/updatedb.8.gz
+/usr/bin/updatedb
+/usr/bin/updatedb.mlocate
+/usr/share/man/man5/updatedb.conf.5.gz
+/usr/share/man/man8/updatedb.8.gz
+/usr/share/man/man8/updatedb.mlocate.8.gz
+
+QUESTION 5
+
+recruit@admin1-ThinkCentre-M72e:~/Desktop$ cd ~
+
+QUESTION 6
+
+recruit@admin1-ThinkCentre-M72e:~$ locate pad_copy.md
+
+
+
+TASK 6 : FIND COMMANDS
+
+QUESTION 1
+
+recruit@admin1-ThinkCentre-M72e:~$ locate *.pdf
+
+QUESTION 2
+
+recruit@admin1-ThinkCentre-M72e:~$ locate *.pdf ~/Desktop
+
+QUESTION 3
+
+recruit@admin1-ThinkCentre-M72e:~$ find -daystart -ctime 0 -print
+
+
+TASK 7 : TEXT EDITOR
+
+QUESTION 1
+
+recruit@admin1-ThinkCentre-M72e:~$ nano my_bio.md
+
+QUESTION 2
+
+Ctrl x
+
+QUESTION 3
+
+recruit@admin1-ThinkCentre-M72e:~$ mkdir my_files
+recruit@admin1-ThinkCentre-M72e:~$ mv my_bio.md ~/my_files
+ 
